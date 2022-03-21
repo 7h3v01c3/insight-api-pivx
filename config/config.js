@@ -57,11 +57,11 @@ var isWin = /^win/.test(process.platform);
 var isMac = /^darwin/.test(process.platform);
 var isLinux = /^linux/.test(process.platform);
 if (!dataDir) {
-  if (isWin) dataDir = '%APPDATA%\\Pivx\\';
-  if (isMac) dataDir = process.env.HOME + '/Library/Application Support/Pivx/';
-  if (isLinux) dataDir = process.env.HOME + '/.pivx/';
+  if (isWin) dataDir = '%APPDATA%\\DIVI\\';
+  if (isMac) dataDir = process.env.HOME + '/Library/Application Support/DIVI/';
+  if (isLinux) dataDir = process.env.HOME + '/.divi/';
 }
-dataDir += network === 'testnet' ? 'testnet4' : '';
+dataDir += network === 'testnet' ? 'testnet3' : '';
 
 var safeConfirmations = process.env.INSIGHT_SAFE_CONFIRMATIONS || 6;
 var ignoreCache = process.env.INSIGHT_IGNORE_CACHE || 0;
