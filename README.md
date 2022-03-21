@@ -30,7 +30,7 @@ through the RPC API, DIVI peer-to-peer protocol, and will even read its raw bloc
 
 Configure divid to listen to RPC calls and set `txindex` to true.
 The easiest way to do this is by copying `./etc/divid/DIVI.conf` to your
-bitcoin data directory (usually `~/.DIVI` on Linux, `%appdata%\DIVI\` on Windows,
+Divi data directory (usually `~/.DIVI` on Linux, `%appdata%\DIVI\` on Windows,
 or `~/Library/Application Support/DIVI` on Mac OS X).
 
 divid must be running and must have finished downloading the blockchain **before** running *insight API*.
